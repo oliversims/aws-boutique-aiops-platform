@@ -33,15 +33,15 @@ End-to-end boutique platform: a multi-service store on **Amazon EKS**, provision
 | **Delivery** | GitHub Actions → ECR → Argo CD |
 | **Data** | RDS PostgreSQL 16 |
 | **AIOps** | AgentCore Harness/Gateway + 3 tool Lambdas |
-| **State** | Torn down — code and evidence retained |
+| **State** | Torn down — source is private; this repo keeps the report and screenshots |
 
-| Service | Endpoint |
+| Service | Hostname while the stack was up |
 |---|---|
-| Storefront | https://app.simsoliver.com |
-| Argo CD | https://argo.simsoliver.com |
-| Grafana | https://graf.simsoliver.com |
-| Jaeger | https://trace.simsoliver.com |
-| Kira | https://kira.simsoliver.com |
+| Storefront | `app.simsoliver.com` |
+| Argo CD | `argo.simsoliver.com` |
+| Grafana | `graf.simsoliver.com` |
+| Jaeger | `trace.simsoliver.com` |
+| Kira | `kira.simsoliver.com` |
 
 ---
 
@@ -93,7 +93,7 @@ orders → product-service (price) → order-service (notify)
 
 ## Repository layout
 
-The private repository is organized as follows.
+Source, GitOps, and runbooks stay in the private repository. This report keeps the diagrams and screenshots under `docs/`.
 
 ```text
 .
@@ -102,7 +102,9 @@ The private repository is organized as follows.
 │   ├── Infrastructure/           # Terraform modules + envs
 │   └── aiops-assistant/          # Kira UI + Lambdas + deploy
 ├── gitops/                       # Argo CD apps, ingress, Karpenter
-├── images/                       # Diagrams + validation screenshots
+├── docs/
+│   ├── architecture/             # Platform, service, and Kira diagrams
+│   └── evidence/                 # Validation screenshots
 ├── SERVICE-FLOWS.txt             # Boutique request flows
 ├── KIRA-FLOWS.txt                # Kira tool paths
 ├── RESTORATION.txt / TEARDOWN.txt
@@ -520,8 +522,8 @@ The Streamlit UI `kira-ui`, in namespace `aiops`, uses IRSA to invoke harness **
 
 | Action | Runbook |
 |---|---|
-| Restore | `RESTORATION.txt` — state bucket → `terraform apply` → Argo deploy → CI → `deploy-kira.sh` |
-| Tear down | `TEARDOWN.txt` — stop EKS / RDS / ALB spend |
+| Restore | `RESTORATION.txt` in the private repository |
+| Tear down | `TEARDOWN.txt` in the private repository |
 
 ---
 
