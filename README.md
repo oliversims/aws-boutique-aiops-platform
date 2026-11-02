@@ -4,18 +4,22 @@
   <img src="docs/evidence/aws-main-logo-2025-orange-arrow-icon-1.png" alt="AWS" width="120" />
 </p>
 
-![Boutique CI Pipeline](https://img.shields.io/badge/Boutique%20CI%20Pipeline-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
-![IaC](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)
-![Cloud](https://img.shields.io/badge/Cloud-AWS%20us--east--1-232F3E?logo=amazon-aws&logoColor=white)
-![Orchestration](https://img.shields.io/badge/Orchestration-Amazon%20EKS-FF9900?logo=amazon-eks&logoColor=white)
-![Packaging](https://img.shields.io/badge/Packaging-Helm%20%2B%20Kustomize-0F1689?logo=helm&logoColor=white)
-![CI](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)
-![Registry](https://img.shields.io/badge/Registry-Amazon%20ECR-FF9900?logo=amazon-ecr&logoColor=white)
-![CD](https://img.shields.io/badge/CD-Argo%20CD-EF7B4D?logo=argo&logoColor=white)
-![Autoscaling](https://img.shields.io/badge/Autoscaling-Karpenter-FF9900)
-![Observability](https://img.shields.io/badge/Observability-Prometheus%20%7C%20Grafana%20%7C%20Jaeger-E6522C?logo=prometheus&logoColor=white)
-![AIOps](https://img.shields.io/badge/AIOps-Bedrock%20AgentCore-232F3E?logo=amazon-aws&logoColor=white)
-![App](https://img.shields.io/badge/App-boutique--microservices-2ea44f)
+<p align="center">
+  <img alt="Terraform" src="https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white">
+  <img alt="Amazon EKS" src="https://img.shields.io/badge/Amazon_EKS-FF9900?logo=amazon-eks&logoColor=white">
+  <img alt="Karpenter" src="https://img.shields.io/badge/Karpenter-FF9900?logo=kubernetes&logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white">
+  <img alt="Amazon ECR" src="https://img.shields.io/badge/Amazon_ECR-FF9900?logo=amazon-ecr&logoColor=white">
+  <img alt="Argo CD" src="https://img.shields.io/badge/Argo_CD-EF7B4D?logo=argo&logoColor=white">
+</p>
+<p align="center">
+  <img alt="Helm" src="https://img.shields.io/badge/Helm-0F1689?logo=helm&logoColor=white">
+  <img alt="Prometheus" src="https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white">
+  <img alt="Grafana" src="https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white">
+  <img alt="Jaeger" src="https://img.shields.io/badge/Jaeger-66CFE3?logo=jaeger&logoColor=black">
+  <img alt="CloudWatch" src="https://img.shields.io/badge/CloudWatch-FF4F8B?logo=amazoncloudwatch&logoColor=white">
+  <img alt="Bedrock" src="https://img.shields.io/badge/Bedrock-232F3E?logo=amazon-aws&logoColor=white">
+</p>
 
 End-to-end boutique platform: a multi-service store on **Amazon EKS**, provisioned with **Terraform**, shipped with **GitHub Actions** and **Argo CD**, observed with **Prometheus**, **Grafana**, **Jaeger**, and **CloudWatch**, and operated with **Kira** on Bedrock AgentCore.
 
