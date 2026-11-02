@@ -43,6 +43,29 @@ End-to-end boutique platform: a multi-service store on **Amazon EKS**, provision
 | Jaeger | `trace.simsoliver.com` |
 | Kira | `kira.simsoliver.com` |
 
+## Contents
+
+1. [Architecture](#architecture)
+   - [Platform (full stack)](#platform-full-stack)
+   - [Application services](#application-services)
+   - [Kira AIOps](#kira-aiops)
+2. [What this demonstrates](#what-this-demonstrates)
+3. [Repository layout](#repository-layout)
+4. [Application](#application)
+   - [Storefront](#storefront)
+5. [Infrastructure (Terraform)](#infrastructure-terraform)
+   - [Compute & registry evidence](#compute--registry-evidence)
+6. [CI/CD](#cicd)
+7. [GitOps (Argo CD)](#gitops-argo-cd)
+8. [Observability](#observability)
+   - [Metrics — Grafana](#metrics--grafana)
+   - [Traces — Jaeger](#traces--jaeger)
+   - [Logs — CloudWatch](#logs--cloudwatch)
+9. [AIOps — Kira](#aiops--kira)
+10. [Security & networking](#security--networking)
+11. [Operate](#operate)
+12. [Author](#author)
+
 ---
 
 ## Architecture
