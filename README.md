@@ -25,63 +25,23 @@ End-to-end boutique platform: a multi-service store on **Amazon EKS**, provision
 
 > **Status:** Built and validated in production, then torn down for cost control. This repository presents the architecture and the screenshots. The source code and infrastructure stay private. Hostnames do not resolve while the stack is destroyed.
 
-<table align="center">
-  <tr>
-    <td><strong>Cloud</strong></td>
-    <td>AWS <code>us-east-1</code></td>
-  </tr>
-  <tr>
-    <td><strong>Compute</strong></td>
-    <td>EKS <code>eks-cluster-prod</code> (K8s 1.34) + Karpenter</td>
-  </tr>
-  <tr>
-    <td><strong>IaC</strong></td>
-    <td>Terraform (<code>modules</code> + <code>environments/prod</code>)</td>
-  </tr>
-  <tr>
-    <td><strong>Delivery</strong></td>
-    <td>GitHub Actions → ECR → Argo CD</td>
-  </tr>
-  <tr>
-    <td><strong>Data</strong></td>
-    <td>RDS PostgreSQL 16</td>
-  </tr>
-  <tr>
-    <td><strong>AIOps</strong></td>
-    <td>AgentCore Harness/Gateway + 3 tool Lambdas</td>
-  </tr>
-  <tr>
-    <td><strong>State</strong></td>
-    <td>Torn down — source is private; this repo keeps the report and screenshots</td>
-  </tr>
-</table>
+| | |
+|---|---|
+| **Cloud** | AWS `us-east-1` |
+| **Compute** | EKS `eks-cluster-prod` (K8s 1.34) + Karpenter |
+| **IaC** | Terraform (`modules` + `environments/prod`) |
+| **Delivery** | GitHub Actions → ECR → Argo CD |
+| **Data** | RDS PostgreSQL 16 |
+| **AIOps** | AgentCore Harness/Gateway + 3 tool Lambdas |
+| **State** | Torn down — source is private; this repo keeps the report and screenshots |
 
-<table align="center">
-  <tr>
-    <th>Service</th>
-    <th>Hostname while the stack was up</th>
-  </tr>
-  <tr>
-    <td>Storefront</td>
-    <td><code>app.simsoliver.com</code></td>
-  </tr>
-  <tr>
-    <td>Argo CD</td>
-    <td><code>argo.simsoliver.com</code></td>
-  </tr>
-  <tr>
-    <td>Grafana</td>
-    <td><code>graf.simsoliver.com</code></td>
-  </tr>
-  <tr>
-    <td>Jaeger</td>
-    <td><code>trace.simsoliver.com</code></td>
-  </tr>
-  <tr>
-    <td>Kira</td>
-    <td><code>kira.simsoliver.com</code></td>
-  </tr>
-</table>
+| Service | Hostname while the stack was up |
+|---|---|
+| Storefront | `app.simsoliver.com` |
+| Argo CD | `argo.simsoliver.com` |
+| Grafana | `graf.simsoliver.com` |
+| Jaeger | `trace.simsoliver.com` |
+| Kira | `kira.simsoliver.com` |
 
 ## Contents
 
